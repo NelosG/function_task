@@ -116,6 +116,7 @@ private:
             return *reinterpret_cast<T *const *>(&buffer);
         }
     }
+
     using storage_t = storage<R, Args...>;
     constexpr static type_descriptor<R, Args...> empty_descriptor =
             {
